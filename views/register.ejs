@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+</head>
+<body>
+
+<% if (message) { %>
+  <script>alert("<%= message %>");</script>
+<% } %>
+
+<h1>Register</h1>
+<form action="/register" method="POST">
+  <label>Username:</label><br/>
+  <input type="text" name="username" required /><br/><br/>
+
+  <label>Password:</label><br/>
+  <input type="password" name="password" required /><br/><br/>
+
+  <button type="submit">Register</button>
+</form>
+
+<br/>
+
+<!-- 🔗 Login page link -->
+<p>Already have an account? <a href="/login">Login here</a></p>
+
+</body>
+</html>
